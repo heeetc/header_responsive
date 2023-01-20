@@ -15,6 +15,12 @@
         border: 1px solid black;
         padding: 10px;
       }
+      .col1 {
+        width: 80px;
+      }
+      .col2 {
+        background-color: lightblue;
+      }
     </style>
   </head>
   <body>
@@ -40,5 +46,65 @@
       </tr>
     </table>
     <hr />
+    <h1>Table 그룹 태그</h1>
+    <table>
+      <caption>
+        학급 점수
+      </caption>
+      <colgroup>
+        <col class="col1" />
+        <col class="col2" />
+        <col class="col3" />
+        <col class="col4" />
+        <col class="col5" />
+        <col class="col6" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th>반</th>
+          <th>이름</th>
+          <th>국어</th>
+          <th>수학</th>
+          <th>영어</th>
+          <th>코딩</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1반</td>
+          <td>최희정</td>
+          <td>90</td>
+          <td>77</td>
+          <td>100</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>1반</td>
+          <td>박지민</td>
+          <td>100</td>
+          <td>100</td>
+          <td>83</td>
+          <td>92</td>
+        </tr>
+        <tr>
+          <td>1반</td>
+          <td>김남준</td>
+          <td>100</td>
+          <td>95</td>
+          <td>100</td>
+          <td>82</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>1반</td>
+          <td>평균</td>
+          <td>85.5</td>
+          <td>85.5</td>
+          <td>95.5</td>
+          <td>95</td>
+        </tr>
+      </tfoot>
+    </table>
   </body>
 </html>
